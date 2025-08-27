@@ -1,34 +1,33 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    outline: 1px solid red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
 body {
-    font-family: 'Outfit', sans-serif;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    color: #000000;
-    width: 1440px;
+  font-family: "Outfit", sans-serif;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  width: 1440px;
 }
-
 
 /* navbar start */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* background-color: green; */
-    flex-direction: row;
-    gap: 10px;
-    padding: 25px 70px 25px 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: green; */
+  flex-direction: row;
+  gap: 10px;
+  padding: 25px 70px 25px 70px;
 }
 
 .navbar .navbar-logo {
-    width: 165px;
-    height: 50px;
-    cursor: pointer;
+  width: 165px;
+  height: 50px;
+  cursor: pointer;
 }
 
 /* .navbar .navbar-logo img {
@@ -38,256 +37,295 @@ body {
 } */
 
 .navbar .navbar-nav {
-    display: flex;
-    gap: 24px;
-    /* background-color: #ffffff; */
+  display: flex;
+  gap: 24px;
+  /* background-color: #ffffff; */
 }
 
 .navbar .navbar-nav a {
-    text-decoration: none;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.5%;
-    text-align: center;
-    color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.5%;
+  text-align: center;
+  color: #000000;
 }
 
 .navbar .navbar-button {
-    padding: 10px 25px;
-    border: 1px solid #dddddd;
-    border-radius: 50px;
-    text-decoration: none;
+  padding: 10px 25px;
+  border: 1px solid #dddddd;
+  border-radius: 50px;
+  text-decoration: none;
 }
 
-
 .navbar .navbar-button a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 150%;
-    letter-spacing: -0.5%;
-    color: #336913;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: -0.5%;
+  color: #336913;
 }
 /* navbar end */
 
 /* hero start */
 .hero {
-    display: flex;
+  display: flex;
 }
 
 /* hero kiri */
 .hero .kiri {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    /* flex: 1; */
-    width: 729px;
-    height: 686px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* flex: 1; */
+  width: 729px;
+  /* height: 686px; */
 }
 
 .hero .kiri .atas {
-    display: flex;
-    flex-direction: column;
-    padding: 50px 70px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px;
 }
 
 .hero .kiri .atas .content .judul {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .hero .kiri .atas .content .judul {
-    display: flex;
-    flex-direction: column;
-    /* width: 583px; */
-    /* padding-bottom: 40px; */
+  display: flex;
+  flex-direction: column;
+  /* width: 583px; */
+  /* padding-bottom: 40px; */
 }
 
 .hero .kiri .atas .content .judul-kecil {
-    display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid #dddddd;
-    border-radius: 9000px;
-    width: 282px;
-    height: 24px;
-    justify-content: center;
-    margin-bottom: 16px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 9000px;
+  width: 282px;
+  height: 24px;
+  justify-content: center;
+  margin-bottom: 16px;
 }
 
 .hero .kiri .atas .content .judul-kecil p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: -0.5%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.5%;
 }
 
 .hero .kiri .atas .content .judul {
-    /* width: 583px;
+  /* width: 583px;
     height: 100px; */
-    font-weight: 700;
-    font-size: 26.4px;
-    /* line-height: 125%;
+  font-weight: 700;
+  font-size: 26.4px;
+  /* line-height: 125%;
     letter-spacing: -0.5%; */
 }
 
 .hero .kiri .atas .content .support {
-    /* width: 589px;
+  /* width: 589px;
     height: 137px; */
-    padding-top: 29px;
-    padding-bottom: 31px;
-    padding-left: 35px;
-    padding-right: 34px;
-    border: 1px solid #eeeeee;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
+  padding-top: 29px;
+  padding-bottom: 31px;
+  padding-left: 35px;
+  padding-right: 34px;
+  border: 1px solid #eeeeee;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
-.hero .kiri .atas .content .support .isi .top-row{
-    margin-bottom: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.hero .kiri .atas .content .support .isi .top-row {
+  margin-bottom: 17px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .hero .kiri .atas .content .support .isi .top-row .head {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .hero .kiri .atas .content .support .isi .top-row .head img {
-    width: 40px;
+  width: 40px;
 }
 
 .hero .kiri .atas .content .support .isi .top-row .head h2 {
-    margin-left: 11px;
-    font-family: 'inter', sans-serif;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: #336913;
+  margin-left: 11px;
+  font-family: "inter", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #336913;
 }
 
 .hero .kiri .atas .content .support .isi .top-row .head h2 span {
-    font-family: 'inter', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    letter-spacing: 0%;
+  font-family: "inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
 }
 
 .hero .kiri .atas .content .support .isi .top-row .button {
-    padding: 10px 25px;
-    gap: 5px;
-    border: 1px solid #336913;
-    border-radius: 9000px;
-    background-color: #336913;
+  padding: 10px 25px;
+  gap: 5px;
+  border: 1px solid #336913;
+  border-radius: 9000px;
+  background-color: #336913;
 }
 
 .hero .kiri .atas .content .support .isi .top-row .button a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    line-height: 150%;
-    letter-spacing: -0.5%;
-    text-align: center;
-    margin-right: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: -0.5%;
+  text-align: center;
+  margin-right: 5px;
 }
 
 .hero .kiri .atas .content .support .isi .progress-bar {
-    width: 520px;
-    height: 15px;
-    background-color: #EFF7EF;
-    border-radius: 900px;
+  width: 520px;
+  height: 15px;
+  background-color: #eff7ef;
+  border-radius: 900px;
 }
 
 .hero .kiri .atas .content .support .isi .progress-bar .progress {
-    width: 220px;
-    height: 15px;
-    border-radius: 900px;
-    background-color: #336913;
+  width: 220px;
+  height: 15px;
+  border-radius: 900px;
+  background-color: #336913;
 }
 
 /* hero kanan */
 .hero .kanan {
-    display: flex;
-    flex-direction: column;
-    padding: 32px 24px 42px 42px;
-    width: 711px;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 42px 42px;
+  width: 100%;
 }
 
 .hero .kanan .atas .judul {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 .hero .kanan .atas .judul h2 {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 125%;
-    letter-spacing: -0.5%;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: -0.5%;
 }
 
 .hero .kanan .atas .button {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 38px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 38px;
 }
 
 .hero .kanan .atas .button .button1 {
-    padding: 10px 30px;
-    gap: 10px;
-    border: 1px solid #85BB50;
-    border-radius: 9000px;
-    margin-right: 10px;
+  padding: 10px 30px;
+  gap: 10px;
+  border: 1px solid #85bb50;
+  border-radius: 9000px;
+  margin-right: 10px;
 }
 
 .hero .kanan .atas .button .button1 a {
-    text-decoration: none;
-    color: #2D9444;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: -0.5%;
-    text-align: center;
+  text-decoration: none;
+  color: #2d9444;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.5%;
+  text-align: center;
 }
 
 .hero .kanan .atas .button .button2 {
-    padding: 10px 30px;
-    gap: 10px;
-    border: 1px solid #dddddd;
-    border-radius: 9000px;
+  padding: 10px 30px;
+  gap: 10px;
+  border: 1px solid #dddddd;
+  border-radius: 9000px;
 }
 
 .hero .kanan .atas .button .button2 a {
-    text-decoration: none;
-    color: #888888;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 150%;
-    letter-spacing: -0.5%;
-    text-align: center;
+  text-decoration: none;
+  color: #888888;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.5%;
+  text-align: center;
 }
 
 .hero .kanan .bawah {
-    width: 627px;
-    height: 501px;
-    gap: 10px;
+  width: 100%;
+  /* height: 501px; */
+  gap: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero .kanan .bawah .leaderboard-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero .kanan .bawah .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* border-bottom: 1px solid black; */
+}
+
+.hero .kanan .bawah .leaderboard-list .list .kiri {
     display: flex;
     flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100% !important;
+    height: 100% !important;
+    gap: 16px;
+}
+
+.hero .kanan .bawah .leaderboard-list .list .kiri .judul {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kiri .icon {
-    width: 60px;
-    height: 60px;
+  width: 60px;
+  height: 60px;
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kanan .pohon {
-    width: 30px;
-    height: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+.hero .kanan .bawah .leaderboard-list .list .kanan {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    width: fit-content;
 }
 
 /* .hero .kanan .bawah .leaderboard-list {
