@@ -272,12 +272,28 @@ body {
     text-align: center;
 }
 
-.hero .kanan .bawah {
+/* .hero .kanan .bawah {
     width: 627px;
     height: 501px;
-    gap: 10px;
+} */
+
+.hero .kanan .bawah .leaderboard-list .list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.hero .kanan .bawah .leaderboard-list .list .kiri {
     display: flex;
     flex-direction: row;
+    gap: 20px;
+}
+
+.hero .kanan .bawah .leaderboard-list .list .kiri .tes {
+    display: flex;
+    gap: 8px;
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kiri .icon {
