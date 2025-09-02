@@ -10,7 +10,7 @@ body {
   box-sizing: border-box;
   background-color: #ffffff;
   color: #000000;
-  width: 1440px;
+  /* width: 1440px; */
 }
 
 /* navbar start */
@@ -72,55 +72,77 @@ body {
 /* hero start */
 .hero {
   display: flex;
+  /* border: 1px solid #2d9444; */
 }
 
 /* hero kiri */
-.hero .kiri {
+.hero .kirii {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   /* flex: 1; */
-  width: 729px;
+  width: 100%;
+  border-right: 1px solid #a8a8a8;
+  /* gap: 100px; */
   /* height: 686px; */
 }
 
-.hero .kiri .atas {
-  display: flex;
-  flex-direction: column;
-  padding: 50px 70px;
+.nomor {
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 48px;
+  border-radius: 50px;
+  background-color: #336913;
+
+  &.empat {
+    background-color: #85bb50;
+  }
+
+  &.kuning {
+    background-color: #a7cc05;
+  }
 }
 
-.hero .kiri .atas .content .judul {
+.hero .kirii .atas {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 70px 0px 70px;
+}
+
+.hero .kirii .atas .content .judul {
   margin-bottom: 40px;
 }
 
-.hero .kiri .atas .content .judul {
+.hero .kirii .atas .content .judul {
   display: flex;
   flex-direction: column;
   /* width: 583px; */
   /* padding-bottom: 40px; */
 }
 
-.hero .kiri .atas .content .judul-kecil {
+.hero .kirii .atas .content .judul-kecil {
   display: flex;
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid #dddddd;
   border-radius: 9000px;
   width: 282px;
-  height: 24px;
   justify-content: center;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
 }
 
-.hero .kiri .atas .content .judul-kecil p {
+.hero .kirii .atas .content .judul-kecil p {
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   letter-spacing: -0.5%;
 }
 
-.hero .kiri .atas .content .judul {
+.hero .kirii .atas .content .judul {
   /* width: 583px;
     height: 100px; */
   font-weight: 700;
@@ -129,7 +151,7 @@ body {
     letter-spacing: -0.5%; */
 }
 
-.hero .kiri .atas .content .support {
+.hero .kirii .atas .content .support {
   /* width: 589px;
     height: 137px; */
   padding-top: 29px;
@@ -142,23 +164,23 @@ body {
   flex-direction: column;
 }
 
-.hero .kiri .atas .content .support .isi .top-row {
+.hero .kirii .atas .content .support .isi .top-row {
   margin-bottom: 17px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.hero .kiri .atas .content .support .isi .top-row .head {
+.hero .kirii .atas .content .support .isi .top-row .head {
   display: flex;
   align-items: center;
 }
 
-.hero .kiri .atas .content .support .isi .top-row .head img {
+.hero .kirii .atas .content .support .isi .top-row .head img {
   width: 40px;
 }
 
-.hero .kiri .atas .content .support .isi .top-row .head h2 {
+.hero .kirii .atas .content .support .isi .top-row .head h2 {
   margin-left: 11px;
   font-family: "inter", sans-serif;
   font-weight: 700;
@@ -169,7 +191,7 @@ body {
   color: #336913;
 }
 
-.hero .kiri .atas .content .support .isi .top-row .head h2 span {
+.hero .kirii .atas .content .support .isi .top-row .head h2 span {
   font-family: "inter", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -177,7 +199,7 @@ body {
   letter-spacing: 0%;
 }
 
-.hero .kiri .atas .content .support .isi .top-row .button {
+.hero .kirii .atas .content .support .isi .top-row .button {
   padding: 10px 25px;
   gap: 5px;
   border: 1px solid #336913;
@@ -185,7 +207,7 @@ body {
   background-color: #336913;
 }
 
-.hero .kiri .atas .content .support .isi .top-row .button a {
+.hero .kirii .atas .content .support .isi .top-row .button a {
   color: #ffffff;
   text-decoration: none;
   font-weight: 600;
@@ -196,14 +218,14 @@ body {
   margin-right: 5px;
 }
 
-.hero .kiri .atas .content .support .isi .progress-bar {
+.hero .kirii .atas .content .support .isi .progress-bar {
   width: 520px;
   height: 15px;
   background-color: #eff7ef;
   border-radius: 900px;
 }
 
-.hero .kiri .atas .content .support .isi .progress-bar .progress {
+.hero .kirii .atas .content .support .isi .progress-bar .progress {
   width: 220px;
   height: 15px;
   border-radius: 900px;
@@ -214,7 +236,7 @@ body {
 .hero .kanan {
   display: flex;
   flex-direction: column;
-  padding: 32px 24px 42px 42px;
+  padding: 60px 24px 42px 42px;
   width: 100%;
 }
 
@@ -232,7 +254,7 @@ body {
 .hero .kanan .atas .button {
   display: flex;
   flex-direction: row;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
 }
 
 .hero .kanan .atas .button .button1 {
@@ -241,16 +263,10 @@ body {
   border: 1px solid #85bb50;
   border-radius: 9000px;
   margin-right: 10px;
-}
-
-.hero .kanan .atas .button .button1 a {
-  text-decoration: none;
   color: #2d9444;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 150%;
-  letter-spacing: -0.5%;
-  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 .hero .kanan .atas .button .button2 {
@@ -258,16 +274,13 @@ body {
   gap: 10px;
   border: 1px solid #dddddd;
   border-radius: 9000px;
-}
-
-.hero .kanan .atas .button .button2 a {
+  color: #2d9444;
+  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
   color: #888888;
   font-weight: 500;
   font-size: 18px;
-  line-height: 150%;
-  letter-spacing: -0.5%;
-  text-align: center;
 }
 
 .hero .kanan .bawah {
@@ -279,10 +292,10 @@ body {
 }
 
 .hero .kanan .bawah .leaderboard-list {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .hero .kanan .bawah .list {
@@ -290,23 +303,25 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  border-bottom: 1px solid #a8a8a8;
+  padding-bottom: 15px;
   /* border-bottom: 1px solid black; */
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kiri {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    width: 100% !important;
-    height: 100% !important;
-    gap: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  width: 100% !important;
+  height: 100% !important;
+  gap: 16px;
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kiri .judul {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kiri .icon {
@@ -320,127 +335,91 @@ body {
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kanan {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 0px;
-    gap: 10px;
-    width: fit-content;
-}
-
-/* .hero .kanan .bawah .leaderboard-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-}
-
-.hero .kanan .bawah .leaderboard-list .list {
-    display: flex;
-
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 16px 0;
-    position: relative;
-    max-width: 627px;
-    max-height: 60px;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kiri {
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kiri .nomor {
-    width: 48px;
-    height: 48px;
-    background-color: #336913;
-    border-radius: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 125%;
-    letter-spacing: -0.5%;
-
-    flex-shrink: 0;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kiri .icon {
-    width: 60px;
-    height: 60px;
-
-   flex-shrink: 0;
-
-   position: relative;
-   left: -130px;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kiri .user-info {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kiri .user-info span {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    margin: 0;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kiri .user-info h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 125%;
-    letter-spacing: -0.5%;
-    margin: 0;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kanan {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 8px;
-    flex-shrink: 0;
-    max-width: 123.25px;
-}
-
-.hero .kanan .bawah .leaderboard-list .list .kanan .pohon {
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+  width: fit-content;
 }
 
 .hero .kanan .bawah .leaderboard-list .list .kanan h3 {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 125%;
-    letter-spacing: -0.5%;
-    color: #336913;
-    margin: 0;
+  color: #336913;
+  font-family: "Inter", sans-serif;
+  font-size: 22.5px;
+
+  span {
+    font-size: 12px;
+  }
 }
 
-.hero .kanan .bawah .leaderboard-list .list .kanan h3 span {
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 125%;
-    letter-spacing: -0.5%;
-    color: #666666;
-    margin-left: 4px;
+/* section 2 */
+section.sponsor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 70px;
+  padding: 36px 70px;
+  background-color: #f5f8fa;
+
+  img {
+    width: 150px;
+    /* height: 27px; */
+  }
 }
 
-.hero .kanan .bawah .leaderboard-list .list-line {
-    width: 100%;
-    height: 1px;
-    margin: 0;
-    display: block;
-} */
+/* section 3 */
+section.about {
+  padding: 70px 78px;
+
+  .container {
+    .content-bawah {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      gap: 44px;
+      position: relative;
+
+      .content-tengah {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-100px);
+        background-color: #ffffff;
+        z-index: 99;
+        width: 200px;
+        height: 120px;
+        border-radius: 30px;
+
+        img {
+          position: relative;
+          top: -8px;
+          left: 50px;
+        }
+
+        h3 {
+          font-weight: 700;
+          font-size: 15px;
+          text-align: center;
+          line-height: 22.5px;
+          color: #2d9444;
+          position: relative;
+          top: -25px;
+        }
+      }
+
+      .content-kiri,
+      .content-kanan {
+        h3 {
+          text-align: center;
+          font-size: 22px;
+          font-weight: 600;
+          margin: 22px 0px;
+        }
+      }
+    }
+  }
+}
+
+/*  */
