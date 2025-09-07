@@ -82,7 +82,7 @@ body {
   justify-content: space-between;
   /* flex: 1; */
   width: 100%;
-  border-right: 1px solid #a8a8a8;
+  border-right: 1px solid #EEEEEE;
   /* gap: 100px; */
   /* height: 686px; */
 }
@@ -162,6 +162,7 @@ body {
   border-radius: 20px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0px 0px 20px 0px #0000000D;
 }
 
 .hero .kirii .atas .content .support .isi .top-row {
@@ -303,7 +304,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid #a8a8a8;
+  border-bottom: 1px solid #EEEEEE;
   padding-bottom: 15px;
   /* border-bottom: 1px solid black; */
 }
@@ -423,6 +424,8 @@ section.about {
         height: 120px;
         border-radius: 30px;
         top: 110px;
+        box-shadow: 0px 0px 20px 0px #0000000D;
+
 
         img {
           position: relative;
@@ -463,6 +466,7 @@ section.about {
 .event {
   padding: 70px 78px;
   background-color: #F5FAF8;
+  margin-bottom: 70px;
 
   .content-atas {
     width: 700px;
@@ -533,7 +537,9 @@ section.about {
       }
 
       hr {
-        background-color: #E2E2E2;
+        border: none;
+        height: 1px;
+        background-color: #EEEEEE;
         margin-bottom: 24.13px;
       }
 
@@ -616,6 +622,7 @@ section.about {
 
 /* section sponsorship start */
 .sponsorship {
+  margin-bottom: 70px;
   .judul {
     h2 {
       font-family: Outfit;
@@ -793,3 +800,30 @@ section.about {
   }
 }
 /* section sponsorship end */
+
+/* section donate start */
+.donate {
+  background-color: #F5FAF8;
+  height: 668px;
+}
+/* section donate end */
+
+/* section footer start */
+footer {
+  background-color: #1D4009;
+  height: 70px;
+  padding: 21.5px;
+
+  p {
+    font-family: Outfit;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 18px;
+    line-height:150%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+
+  }
+}
+/* section footer end */
