@@ -794,7 +794,9 @@ section.about {
   }
 
   hr {
-    border: 1px solid #EEEEEE;
+    border-width: 6px, 6px, 0px, 6px;
+    border-style: solid;
+    border-color: #EEEEEE;
     margin: 0px auto 50px auto;
     max-width: 1284px;
   }
@@ -804,7 +806,84 @@ section.about {
 /* section donate start */
 .donate {
   background-color: #F5FAF8;
-  height: 668px;
+  /* height: 668px; */
+
+  .atas {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      font-family: Outfit;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 125%;
+      letter-spacing: -0.5%;
+      text-align: center;
+      color: #336913;
+
+      width: 600px;
+      margin-bottom: 10px;
+      margin-top: 70px;
+    }
+
+    p {
+      font-family: Outfit;
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-align: center;
+      width: 550px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      padding: 12.5px 31.25px 12.5px 31.25px;
+      background-color: #336913;
+      text-decoration: none;
+      color: #FFFFFF;
+      border-radius: 11250px;
+
+      img {
+        margin-left: 13.65px;
+      }
+    }
+  }
+
+  .background {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; /* biar bawahnya rata */
+    gap: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap; /* responsive */
+
+    .crop {
+      overflow: hidden;
+      flex-shrink: 0;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   /* crop otomatis */
+        object-position: center; /* fokus di tengah */
+
+      }
+
+      .gambar2 {
+        object-position: 100% center;
+      }
+    }
+
+    .crop:nth-child(1) { width: 240.52px; height: 425.53px; }
+    .crop:nth-child(2) { width: 240.51px; height: 281.22px; }
+    .crop:nth-child(3) { width: 240px; height: 161px; }
+    .crop:nth-child(4) { width: 240.52px; height: 281.22px; }
+    .crop:nth-child(5) { width: 240.52px; height: 425.53px; }
+
+  }
 }
 /* section donate end */
 
